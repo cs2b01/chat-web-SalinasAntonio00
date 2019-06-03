@@ -1,5 +1,5 @@
 $(function(){
-    var url = "http://127.0.0.1:8080/users";
+    var url = "http://127.0.0.1:5000/users";
 
 
     $("#grid").dxDataGrid({
@@ -41,6 +41,8 @@ $(function(){
             dataField: "fullname"
         }, {
             dataField: "password"
-        }, ],
+        },
+          dataField: "Messages"
+        },],
     }).dxDataGrid("instance");
 });
